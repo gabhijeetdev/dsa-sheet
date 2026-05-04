@@ -72,7 +72,7 @@ cp .env.example .env
 
 `.env` file:
 ```
-PORT=5000
+PORT=5001
 MONGO_URI=mongodb://localhost:27017/dsa-sheet
 JWT_SECRET=your_super_secret_key_here
 JWT_EXPIRE=30d
@@ -99,12 +99,7 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ---
 
-## 🐳 Docker Compose (Optional)
 
-```bash
-# From project root
-docker-compose up --build
-```
 
 ---
 
@@ -151,11 +146,6 @@ docker-compose up --build
 | Auth | JWT (jsonwebtoken) + bcryptjs |
 | Styling | Pure CSS with CSS Variables |
 
----
 
-## 🔒 Security Features
 
-- Passwords hashed with bcrypt (salt rounds: 12)
-- JWT tokens with 30-day expiry
-- Protected routes on both frontend and backend
-- CORS configured for specific origins
+
